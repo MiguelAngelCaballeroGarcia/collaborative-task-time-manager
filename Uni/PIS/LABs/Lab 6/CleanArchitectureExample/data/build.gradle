@@ -1,0 +1,41 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace 'edu.ub.pis2425.cleanarchitectureexample.data'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 28
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':features')
+    implementation project(':domain')
+
+    implementation platform(libs.firebase.bom)
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.firebase.firestore
+    implementation libs.modelmapper
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+}

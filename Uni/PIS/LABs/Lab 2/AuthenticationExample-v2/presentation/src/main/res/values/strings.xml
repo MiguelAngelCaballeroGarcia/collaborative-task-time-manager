@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">AuthenticationExample</string>
+    <string name="logo_name">Xoping</string>
+    <string name="element_text">Text</string>
+    <string name="element_number">N</string>
+    <string name="disclaimer_text">Projecte Integrat de Software (2023/24), Universitat de Barcelona.
+        Exclusively designed for teaching purposes.</string>
+
+    <!--   Login screen -->
+    <string name="login_title">Bienvenido/a</string>
+    <string name="login_button">Log in</string>
+    <string name="forgot_password">¿Has olvidado tu contraseña?</string>
+    <string name="not_signed_up">¿Aún no tienes una cuenta? Regístrate</string>
+
+    <!--  Logged in screen -->
+    <string name="logged_in_title">Welcome!</string>
+
+    <!--   Signup screen -->
+    <string name="signup_title">Crea una cuenta</string>
+    <string name="nombre_text">Nombre</string>
+    <string name="email_text">Correo electrónico</string>
+    <string name="email_editText">ejemplo@gmail.com</string>
+    <string name="password_text">Contraseña</string>
+    <string name="repeat_password_text">Repita la contraseña</string>
+    <string name="signup_button">Sign Up</string>
+
+</resources>
